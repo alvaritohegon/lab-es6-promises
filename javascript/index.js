@@ -113,10 +113,8 @@ obtainInstruction('steak', 0)
       document.querySelector("#broccoli").innerHTML += `<li>${step5}</li>`
       const step6 = await obtainInstruction("broccoli", 6);
       document.querySelector("#broccoli").innerHTML += `<li>${step6}</li>`
-      const step7 = await obtainInstruction("broccoli", 7);
-      document.querySelector("#broccoli").innerHTML += `<li>${step7}</li>`
-      // const step8 = await obtainInstruction("broccoli", 8);
-      // document.querySelector("#broccoli").innerHTML += `<li>${step8}Broccoli is ready!</li>`
+      console.log("recetaterminada");
+      document.querySelector("#broccoli").innerHTML += `<li>Broccoli is ready!</li>`
       //? Preguntar mañana
 
     } catch (error) {
@@ -128,12 +126,9 @@ obtainInstruction('steak', 0)
   makeBroccoli()
 
 
+// Bonus 1 - hidden
 
-
-
-
-
-
+document.querySelector("#broccoliImg").removeAttribute("hidden")
 
 // Bonus 2 - Promise all
-// ...
+
